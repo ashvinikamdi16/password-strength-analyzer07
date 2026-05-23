@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Password Strength Analyzer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🔐 Password Strength Analyzer</h1>
+
+<p class="subtitle">
+Check password security instantly
+</p>
+
+<div class="input-box">
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password"
+onkeyup="checkPassword()">
+
+<span class="eye"
+onclick="togglePassword()">
+👁
+</span>
+
+</div>
+
+<div class="progress">
+
+<div class="bar"
+id="bar">
+</div>
+
+</div>
+
+<h2 id="status"></h2>
+
+<div class="rules">
+
+<h3>Password Requirements:</h3>
+
+<p id="r1">✖ Minimum 8 characters</p>
+
+<p id="r2">✖ One uppercase letter</p>
+
+<p id="r3">✖ One lowercase letter</p>
+
+<p id="r4">✖ One number</p>
+
+<p id="r5">✖ One special character</p>
+
+</div>
+
+<div class="tips">
+
+<h3>Security Tips:</h3>
+
+<ul>
+<li>Don't use your name</li>
+<li>Use symbols and numbers</li>
+<li>Avoid common passwords</li>
+<li>Use unique passwords</li>
+</ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
